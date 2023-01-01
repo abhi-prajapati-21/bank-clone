@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bank.css" />
+    <title>Bank.js</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="info-container">
+        <h1>Welcome in Bank.js</h1>
+        <h4>Build the function of a Smart Banking...</h4>
+        <div class="info">
+          <div class="for-row">
+            <img src="/img/check.png" alt="" />
+            <h2>Login Account</h2>
+          </div>
+          <div class="for-row">
+            <img src="/img/check.png" alt="" />
+            <h2>Deposit Money</h2>
+          </div>
+          <div class="for-row">
+            <img src="/img/check.png" alt="" />
+            <h2>Withdraw Money</h2>
+          </div>
+          <div class="for-row">
+            <img src="/img/check.png" alt="" />
+            <h2>Send Money</h2>
+          </div>
+          <div class="for-row">
+            <img src="/img/check.png" alt="" />
+            <h2>Logout Account</h2>
+          </div>
+        </div>
+      </div>
+      <div class="parent-form"> 
+        <div class="btns">
+          <button class="btn" id="signup">Signup</button>
+          <button class="btn" id="login">Login</button>
+        </div>
+        <div class="form-container">
+          <div id="inner-container" class="inner-container">
+            <div class="signup">
+              <div class="signup-head">
+                <h1>Signup</h1>
+              </div>
+              <div class="for-signup">
+                <label class="labels" for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your Full Name..." value="" name="Name" />
+                
+              </div>
+              <div class="for-signup">
+                <label class="labels" for="ac-number">Account Number</label>
+                <input id="ac-number" type="number" placeholder="Enter your Bank Account Number..." name="Account number" value="" />
+              </div>
+              <div class="for-signup">
+                <label class="labels" for="email">Email</label>
+                <input id="email" type="text" placeholder="Enter your email..." value="" name="Email"/>
+              </div>
+              <div class="for-signup">
+                <label class="labels" for="cr-pass">Create Password</label>
+                <input id="cr-pass" type="text" placeholder="Create Password..." value=""  name="Created password"/>
+              </div>
+              <div class="submit-box">
+                <button id="submit">Submit</button>
+              </div>
+            </div>
+            <div class="login">
+              <div class="login-head">
+                <h1>Login</h1>
+              </div>
+              <div class="for-login">
+                <label class="labels" for="email">Account Number</label>
+                <input id="accountNumber" type="text" placeholder="Enter your Account Number" name="account number" value="" />
+                <span id="acError"></span>
+              </div>
+              <div class="for-login">
+                <label class="labels" for="password">Password</label>
+                <input id="password" type="password" value=""  placeholder="Enter your Password" /> 
+                <span id="passwordError"></span>
+            </div>
+            <div class="login-box">
+              <button id="loginBtn">Login</button>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div>
+
+    <script type="module" src="./bank.js"></script>
+    <script type="module" src="./More.js"></script>
+  </body>
+</html>

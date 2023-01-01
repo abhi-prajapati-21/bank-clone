@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="App.css" />
+    <title>Bank.js</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Bank.js</h1>
+      <div class="search-box">
+        <input type="search" placeholder="Search hear..." />
+      </div>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">Feedback</a></li>
+        <li><a href="">Setting</a></li>
+        <li><a href="">Logout</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="row-container">
+        <div class="profile">
+          <div class="profile-head">
+            <h3>Profile</h3>
+          </div>
+          <div class="img-name">
+            <img src="/img/dp2.jpg" alt="" />
+            <div class="name-date">
+              <h4 id="name">Prajapati Abhi</h4>
+              <h5>Memeber 22/3/2019</h5>
+            </div>
+          </div>
+          <div class="pakage-info">
+            <div class="pakage">
+              <h4>Package : Silver</h4>
+              <h5 id="country">India</h5>
+            </div>
+            <button class="hoverBtn">Edit Profile</button>
+          </div>
+        </div>
+        <div class="information">
+          <div class="info-head">
+            <h3>Information</h3>
+          </div>
+          <div class="balance">
+            <h4>Balance</h4>
+            <h4 id="balance">$1000</h4>
+          </div>
+          <div class="ac-type">
+            <h4>Account Type</h4>
+            <h4>Current</h4>
+          </div>
+          <div class="hst-btn">
+            <button class="hoverBtn">History</button>
+          </div>
+        </div>
+        <div class="bills">
+          <h4>My Bills</h4>
+          <button class="hoverBtn">Manage</button>
+        </div>
+      </div>
+      <div class="sec-container">
+        <div class="deposit">
+          <div class="dep-head">
+            <h3>Deposit</h3>
+          </div>
+          <div class="dep-elm">
+            <div class="dep-input">
+              <h4>Enter Amount</h4>
+              <img src="/img/dollar-sign-17082.png" alt="">
+              <input type="number" id="deposit-input" placeholder="" />
+            </div>
+            <button class="hoverBtn">Deposit</button>
+          </div>
+          <h6>*This Amount will be Added in your current Balance</h6>
+        </div>
+        <div class="withdraw">
+          <div class="with-head">
+            <h3>Withdraw</h3>
+          </div>
+          <div class="with-elm">
+            <div class="dep-input">
+              <h4>Enter Amount</h4>
+              <img src="/img/dollar-sign-17082.png" alt="">
+              <input type="number" id="deposit-input" placeholder="" />
+            </div>
+            <button class="hoverBtn">Withdraw</button>
+          </div>
+          <h6>*This Amount will be Deducted from your current Balance</h6>
+        </div>
+        <div class="send">
+          <div class="send-head">
+            <h3>Send Money</h3>
+          </div>
+          <div class="send-elm">
+            <div class="send-input">
+              <h4>Send Money To</h4>
+              <img src="/img/dollar-sign-17082.png" alt="">
+              <input type="number" id="send-input" placeholder="" />
+            </div>
+            <button class="hoverBtn">Send Now</button>
+          </div>
+          <h6>*You can send Money to your Friends or Family</h6>
+        </div>
+      </div>
+      <div class="thr-container">
+        <div class="atm">
+          <img src="/img/debitCard.png" alt="">
+        </div>
+        <div class="bill-recharges">
+          <div class="recharge-head">
+            <h3>Recharge and Bill Payments</h3>
+          </div>
+          <div class="payments-anchors">
+            <a href="">Mobile Recharge</a>
+            <a href="">Electricity Bill</a>
+            <a href="">Credit Card Payment</a>
+            <a href="">Google Play Recharge</a>
+            <a href="">Education Fees</a>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <script type="module" src="./More.js"></script>
+    <script type="module" src="App.js"></script>
+  </body>
+</html>
